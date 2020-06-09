@@ -1,0 +1,12 @@
+{
+    "name": "bear",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+    "content_scripts": [
+        {
+            "matches":["<all_urls>"],
+            "js":["jquery.js","content.js"]
+        }
+    ]
+}
