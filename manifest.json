@@ -1,11 +1,11 @@
 {
-    "name": "bear",
+    "name": "Summarizer",
     "version": "1.0",
     "manifest_version": 2,
     "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
     "content_scripts": [
         {
-            "matches":["<all_urls>"],
+            "matches":["http://*.google.com/*", "https://*.google.com/*"],
             "js":["jquery.js","content.js"]
         }
     ]

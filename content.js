@@ -3,7 +3,6 @@
 const head = document.links
 //alert(head[15].href)
 var links = [];
-//document.write("HAmodh");
 let paragraphs = document.getElementsByTagName('h3');
 let par = document.getElementsByClassName('s');
 var j = 0;
@@ -19,7 +18,7 @@ for (i = 0; i < head.length; i++) {
           url: url,
           complete: function(data) {
             console.log(par[j]);
-            par[j].innerHTML = data.responseText + "  aModh";
+            par[j].innerHTML = data.responseText;
             j = j + 1;
           }
         });
